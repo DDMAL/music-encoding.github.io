@@ -1,0 +1,103 @@
+{
+  "steps": [
+    {
+        "label":"Welcome to the mensural notation tutorial",
+        "descFile": "200_mensural_notation_step-00-desc.html"
+    },
+    {
+        "label":"A Simple Melody",
+        "editorLines":7,
+        "descFile": "200_mensural_notation_step-01-desc.html",
+        "xmlFile": "200_mensural_notation_step-01.xml",
+        "xpaths": [
+            {
+              "rule":"//mei:note[1]/@pname = 'f'", 
+              "renderanyway": true, 
+              "hint":"The first note needs a @pname attribute, with a value of f."
+            },
+            {
+              "rule":"//mei:note[1]/@oct = '4'", 
+              "renderanyway": true, 
+              "hint": "The first note needs a @oct attribute, with a value of 4."
+            },
+            {
+              "rule":"//mei:note[1]/@dur = 'brevis'", 
+              "renderanyway": true, 
+              "hint": "The first note needs a @dur attribute, with a value of brevis."
+            },
+            
+            
+            {
+              "rule":"//mei:note[2]/@pname = 'f'", 
+              "renderanyway": true, 
+              "hint": "The second note needs a @pname attribute, with a value of f."
+            },
+            {
+              "rule":"//mei:note[2]/@oct = '4'", 
+              "renderanyway": true, 
+              "hint": "The second note needs a @oct attribute, with a value of 4."
+            },
+            {
+              "rule":"//mei:note[2]/@dur = 'brevis'", 
+              "renderanyway": true, 
+              "hint": "The second note needs a @dur attribute, with a value of brevis."
+            },
+            {
+              "rule":"//mei:note[2]/@num = '3'", 
+              "renderanyway": true, 
+              "hint": "The second note needs a @num attribute, with a value of 3"
+            },
+            {
+              "rule":"//mei:note[2]/@numbase = '2'", 
+              "renderanyway": true, 
+              "hint": "The second note needs a @numbase attribute, with a value of 2"
+            },
+            
+            
+            {
+              "rule":"//mei:note[3]/@pname = 'e'", 
+              "renderanyway": true, 
+              "hint": "The third note needs a @pname attribute, with a value of e."
+            },
+            {
+              "rule":"//mei:note[3]/@oct = '4'", 
+              "renderanyway": true, 
+              "hint": "The third note needs a @oct attribute, with a value of 4."
+            },
+            {
+              "rule":"//mei:note[3]/@dur = 'semibrevis'", 
+              "renderanyway": true, 
+              "hint": "The third note needs a @dur attribute, with a value of semibrevis."
+            },
+
+            {
+              "rule":"//mei:note[4]/@pname = 'd'", 
+              "renderanyway": true, 
+              "hint": "The fourth note needs a @pname attribute, with a value of d."
+            },
+            {
+              "rule":"//mei:note[4]/@oct = '4'", 
+              "renderanyway": true, 
+              "hint": "The fourth note needs a @oct attribute, with a value of 4."
+            },
+            {
+              "rule":"//mei:note[4]/@dur = 'brevis'", 
+              "renderanyway": true, 
+              "hint": "The fourth note needs a @dur attribute, with a value of brevis."
+            },
+
+            {
+              "rule":"count(//mei:note) = 4", 
+              "renderanyway": true
+            }
+        ]
+    }
+  ],
+  "end":"200_mensural_notation_end.html",
+  "resp":[
+    {
+        "name":"Martha Thomae and Nestor Napoles",
+        "affiliation":"McGill University"
+    }
+  ]
+}
